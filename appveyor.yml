@@ -25,7 +25,8 @@ build_script:
     mvn --batch-mode -P attach-artifacts clean install -P local-deploy; if ($LASTEXITCODE -ne 0) { throw "Build failed" }
     if ($env:APPVEYOR_REPO_BRANCH -eq "main" -and -not $env:APPVEYOR_PULL_REQUEST_NUMBER)
     {
-       mvn --batch-mode site-deploy "-Dgithub.site.oauth2Token=$($env:access_token)"; if ($LASTEXITCODE -ne 0) { throw "Build failed" }
+       # disabled for now, as GitHub Pages site is not used currently
+       # mvn --batch-mode site-deploy "-Dgithub.site.oauth2Token=$($env:access_token)"; if ($LASTEXITCODE -ne 0) { throw "Build failed" }
     }
 
     Write-Host -ForegroundColor Cyan "Archiving artifacts"
