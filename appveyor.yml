@@ -14,7 +14,7 @@ install:
 - ps: |-
     git remote set-url origin https://github.com/dickerpulli/typescript-generator.git
     git config --global credential.helper store
-    Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:GITHUB_TOKEN_CLASSIC):x-oauth-basic@github.com`n"
+    Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:GITHUB_TOKEN):x-oauth-basic@github.com`n"
 build_script:
 - ps: |-
     Write-Host -ForegroundColor Cyan "Building version: $($env:APPVEYOR_BUILD_VERSION)"
