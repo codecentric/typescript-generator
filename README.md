@@ -13,7 +13,7 @@ typescript-generator
 ====================
 
 :information_source: This is a fork of [vojtechhabarta/typescript-generator](https://github.com/vojtechhabarta/typescript-generator).
-It seemms that the author of the original code does not maintain it anymore, so I decided to fork it to release a version 
+It seems that the author of the original code does not maintain it anymore, so I decided to fork it to release a version 
 including Jackson 3 support.
 ---
 
