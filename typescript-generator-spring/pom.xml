@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>de.tbosch.typescript-generator</groupId>
+        <groupId>de.codecentric.typescript-generator</groupId>
         <artifactId>typescript-generator</artifactId>
         <version>3.3-SNAPSHOT</version>
     </parent>
@@ -18,7 +18,7 @@
     <dependencies>
         <!--compile dependencies-->
         <dependency>
-            <groupId>de.tbosch.typescript-generator</groupId>
+            <groupId>de.codecentric.typescript-generator</groupId>
             <artifactId>typescript-generator-core</artifactId>
             <version>3.3-SNAPSHOT</version>
         </dependency>
@@ -45,7 +45,7 @@
 
         <!--test dependencies-->
         <dependency>
-            <groupId>de.tbosch.typescript-generator</groupId>
+            <groupId>de.codecentric.typescript-generator</groupId>
             <artifactId>typescript-generator-core</artifactId>
             <version>3.3-SNAPSHOT</version>
             <type>test-jar</type>

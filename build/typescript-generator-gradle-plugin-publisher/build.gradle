@@ -4,7 +4,7 @@ plugins {
     id 'com.gradle.plugin-publish' version '1.3.1'
 }
 
-group = 'de.tbosch.typescript-generator'
+group = 'de.codecentric.typescript-generator'
 version = "${version}"
 
 repositories {
@@ -13,13 +13,13 @@ repositories {
 }
 
 dependencies {
-    api "de.tbosch.typescript-generator:typescript-generator-gradle-plugin:${version}"
-    api "de.tbosch.typescript-generator:typescript-generator-spring:${version}"
+    api "de.codecentric.typescript-generator:typescript-generator-gradle-plugin:${version}"
+    api "de.codecentric.typescript-generator:typescript-generator-spring:${version}"
 }
 
 task printVersion {
     doLast {
-        println "Releasing 'de.tbosch.typescript-generator' Gradle plugin version ${version}..."
+        println "Releasing 'de.codecentric.typescript-generator' Gradle plugin version ${version}..."
     }
 }
 
@@ -28,7 +28,7 @@ gradlePlugin {
     vcsUrl = 'https://github.com/dickerpulli/typescript-generator'
     plugins {
         typescriptGeneratorPlugin {
-            id = 'de.tbosch.typescript-generator'
+            id = 'de.codecentric.typescript-generator'
             displayName = 'Typescript-generator Gradle plugin'
             description = 'Generates TypeScript from Java - JSON declarations, REST service client'
             implementationClass = 'cz.habarta.typescript.generator.gradle.TypeScriptGeneratorPublishedPlugin'
