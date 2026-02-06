@@ -18,7 +18,7 @@
     <style>.github-fork-ribbon:before { background-color: green; }</style>
   </head>
   <body>
-    <a class="github-fork-ribbon right-top" href="https://github.com/dickerpulli/typescript-generator" data-ribbon="Fork me on GitHub">Fork me on GitHub</a>
+    <a class="github-fork-ribbon right-top" href="https://github.com/codecentric/typescript-generator" data-ribbon="Fork me on GitHub">Fork me on GitHub</a>
     <div class="container-fluid container-fluid-top">
       <header>
         <div id="banner">
@@ -31,7 +31,7 @@
           <ul class="breadcrumb">
         <li id="publishDate">Last Published: 2026-02-06<span class="divider">|</span>
 </li>
-          <li id="projectVersion">Version: 3.3.95</li>
+          <li id="projectVersion">Version: 3.4.6</li>
           </ul>
         </div>
       </header>
@@ -59,7 +59,7 @@
 <section><a id="typescript-generator.3Agenerate"></a>
 <h1>typescript-generator:generate</h1>
 <p><strong>Full name</strong>:</p>
-<p>de.codecentric.typescript-generator:typescript-generator-maven-plugin:3.3.95:generate</p>
+<p>de.codecentric.typescript-generator:typescript-generator-maven-plugin:3.4.6:generate</p>
 <p><strong>Description</strong>:</p>
 <p>Generates TypeScript declaration file from specified java classes. For more information see README and Wiki on GitHub.</p>
 <p><strong>Attributes</strong>:</p>
@@ -96,7 +96,7 @@
  <li><code>global</code> - means that declarations will be in global scope or namespace (no module)</li>
  <li><code>module</code> - means that generated file will contain top-level <code>export</code> declarations</li>
  <li><code>ambientModule</code> - means that generated declarations will be wrapped in <code>declare module "mod" { }</code> declaration</li>
-</ul> Required parameter. For more information see <a href="http://dickerpulli.github.io/typescript-generator/doc/ModulesAndNamespaces.html">Modules and Namespaces</a> Wiki page.</td></tr></table></section><section><a id="Optional_Parameters"></a>
+</ul> Required parameter. For more information see <a href="http://codecentric.github.io/typescript-generator/doc/ModulesAndNamespaces.html">Modules and Namespaces</a> Wiki page.</td></tr></table></section><section><a id="Optional_Parameters"></a>
 <h2>Optional Parameters</h2>
 <table class="table table-striped">
 <tr class="a">
@@ -120,9 +120,9 @@
 <td><code>-</code></td>
 <td>Allows to add support for specified libraries. Some libraries have special Jackson serializers and deserializers for their data types so this parameter allows to reflect actual JSON format of those data types. Note: specified library must be present in project dependencies (typescript-generator itself doesn't depend on those libraries). Supported libraries are: 
 <ul>
- <li><code>guava</code> (<a href="https://github.com/google/guava">source</a>) (<a href="https://github.com/dickerpulli/typescript-generator/blob/main/typescript-generator-core/src/main/resources/datalibrary/guava.json">definition</a>)</li>
- <li><code>joda</code> (<a href="https://github.com/JodaOrg/joda-time">source</a>) (<a href="https://github.com/dickerpulli/typescript-generator/blob/main/typescript-generator-core/src/main/resources/datalibrary/joda.json">definition</a>)</li>
- <li><code>vavr</code> (<a href="https://github.com/vavr-io/vavr">source</a>) (<a href="https://github.com/dickerpulli/typescript-generator/blob/main/typescript-generator-core/src/main/resources/datalibrary/vavr.json">definition</a>)</li>
+ <li><code>guava</code> (<a href="https://github.com/google/guava">source</a>) (<a href="https://github.com/codecentric/typescript-generator/blob/main/typescript-generator-core/src/main/resources/datalibrary/guava.json">definition</a>)</li>
+ <li><code>joda</code> (<a href="https://github.com/JodaOrg/joda-time">source</a>) (<a href="https://github.com/codecentric/typescript-generator/blob/main/typescript-generator-core/src/main/resources/datalibrary/joda.json">definition</a>)</li>
+ <li><code>vavr</code> (<a href="https://github.com/vavr-io/vavr">source</a>) (<a href="https://github.com/codecentric/typescript-generator/blob/main/typescript-generator-core/src/main/resources/datalibrary/vavr.json">definition</a>)</li>
 </ul></td></tr>
 <tr class="a">
 <td><a href="#classPatterns"><code>&lt;classPatterns&gt;</code></a></td>
@@ -132,7 +132,7 @@
 <ul>
  <li>Single <code>*</code> wildcard matches any character except for <code>.</code> and <code>$</code>.</li>
  <li>Double <code>**</code> wildcard matches any character.</li>
-</ul> For more information and examples see <a href="https://github.com/dickerpulli/typescript-generator/wiki/Class-Names-Glob-Patterns">Class Names Glob Patterns</a> Wiki page.</td></tr>
+</ul> For more information and examples see <a href="https://github.com/codecentric/typescript-generator/wiki/Class-Names-Glob-Patterns">Class Names Glob Patterns</a> Wiki page.</td></tr>
 <tr class="b">
 <td><a href="#classes"><code>&lt;classes&gt;</code></a></td>
 <td><code>List&lt;String&gt;</code></td>
@@ -177,7 +177,7 @@
 <td><a href="#customTypeNaming"><code>&lt;customTypeNaming&gt;</code></a></td>
 <td><code>List&lt;String&gt;</code></td>
 <td><code>-</code></td>
-<td>Specifies custom TypeScript names for Java classes. Multiple mappings can be specified, each using this format: <code>javaClassName:typescriptName</code>. This takes precedence over other naming settings. For more information and example see <a href="https://github.com/dickerpulli/typescript-generator/wiki/Type-Mapping">Type Mapping</a> Wiki page.</td></tr>
+<td>Specifies custom TypeScript names for Java classes. Multiple mappings can be specified, each using this format: <code>javaClassName:typescriptName</code>. This takes precedence over other naming settings. For more information and example see <a href="https://github.com/codecentric/typescript-generator/wiki/Type-Mapping">Type Mapping</a> Wiki page.</td></tr>
 <tr class="a">
 <td><a href="#customTypeNamingFunction"><code>&lt;customTypeNamingFunction&gt;</code></a></td>
 <td><code>String</code></td>
@@ -221,7 +221,7 @@
 <td><a href="#excludeClassPatterns"><code>&lt;excludeClassPatterns&gt;</code></a></td>
 <td><code>List&lt;String&gt;</code></td>
 <td><code>-</code></td>
-<td>Excluded classes specified using glob patterns. For more information and examples see <a href="https://github.com/dickerpulli/typescript-generator/wiki/Class-Names-Glob-Patterns">Class Names Glob Patterns</a> Wiki page.</td></tr>
+<td>Excluded classes specified using glob patterns. For more information and examples see <a href="https://github.com/codecentric/typescript-generator/wiki/Class-Names-Glob-Patterns">Class Names Glob Patterns</a> Wiki page.</td></tr>
 <tr class="b">
 <td><a href="#excludeClasses"><code>&lt;excludeClasses&gt;</code></a></td>
 <td><code>List&lt;String&gt;</code></td>
@@ -238,7 +238,7 @@
 <td><code>-</code></td>
 <td>List of extensions specified as fully qualified class name. Known extensions: 
 <ul>
- <li><code>cz.habarta.typescript.generator.ext.AxiosClientExtension}</code> - generates client for JAX-RS service using Axios library, see <a href="https://github.com/dickerpulli/typescript-generator/wiki/JAX-RS-Application">JAX RS Application</a>Wiki page</li>
+ <li><code>cz.habarta.typescript.generator.ext.AxiosClientExtension}</code> - generates client for JAX-RS service using Axios library, see <a href="https://github.com/codecentric/typescript-generator/wiki/JAX-RS-Application">JAX RS Application</a>Wiki page</li>
  <li><code>cz.habarta.typescript.generator.ext.BeanPropertyPathExtension}</code> - generates type-safe property path getters</li>
  <li><code>cz.habarta.typescript.generator.ext.TypeGuardsForJackson2PolymorphismExtension}</code></li>
 </ul> Parameter <code>extensionsWithConfiguration</code><!-- no javadoc sites associated --> can be used in case extension needs some configuration.</td></tr>
@@ -295,7 +295,7 @@
 <td><a href="#gsonConfiguration"><code>&lt;gsonConfiguration&gt;</code></a></td>
 <td><code>GsonConfiguration</code></td>
 <td><code>-</code></td>
-<td>Specifies Gson global configuration. Description of individual parameters is in <a href="https://github.com/dickerpulli/typescript-generator/blob/main/typescript-generator-core/src/main/java/cz/habarta/typescript/generator/GsonConfiguration.java">GsonConfiguration</a> class on GitHub (latest version).</td></tr>
+<td>Specifies Gson global configuration. Description of individual parameters is in <a href="https://github.com/codecentric/typescript-generator/blob/main/typescript-generator-core/src/main/java/cz/habarta/typescript/generator/GsonConfiguration.java">GsonConfiguration</a> class on GitHub (latest version).</td></tr>
 <tr class="a">
 <td><a href="#ignoreSwaggerAnnotations"><code>&lt;ignoreSwaggerAnnotations&gt;</code></a></td>
 <td><code>boolean</code></td>
@@ -322,7 +322,7 @@
 <td><a href="#jackson2Configuration"><code>&lt;jackson2Configuration&gt;</code></a></td>
 <td><code>Jackson2Configuration</code></td>
 <td><code>-</code></td>
-<td>Specifies Jackson 2 global configuration. Description of individual parameters is in <a href="https://github.com/dickerpulli/typescript-generator/blob/main/typescript-generator-core/src/main/java/cz/habarta/typescript/generator/Jackson2Configuration.java">Jackson2Configuration</a> class on GitHub (latest version).</td></tr>
+<td>Specifies Jackson 2 global configuration. Description of individual parameters is in <a href="https://github.com/codecentric/typescript-generator/blob/main/typescript-generator-core/src/main/java/cz/habarta/typescript/generator/Jackson2Configuration.java">Jackson2Configuration</a> class on GitHub (latest version).</td></tr>
 <tr class="b">
 <td><a href="#jackson2ModuleDiscovery"><code>&lt;jackson2ModuleDiscovery&gt;</code></a></td>
 <td><code>boolean</code></td>
@@ -337,7 +337,7 @@
 <td><a href="#jackson3Configuration"><code>&lt;jackson3Configuration&gt;</code></a></td>
 <td><code>Jackson3Configuration</code></td>
 <td><code>-</code></td>
-<td>Specifies Jackson 3 global configuration. Description of individual parameters is in <a href="https://github.com/dickerpulli/typescript-generator/blob/main/typescript-generator-core/src/main/java/cz/habarta/typescript/generator/Jackson3Configuration.java">Jackson3Configuration</a> class on GitHub (latest version).</td></tr>
+<td>Specifies Jackson 3 global configuration. Description of individual parameters is in <a href="https://github.com/codecentric/typescript-generator/blob/main/typescript-generator-core/src/main/java/cz/habarta/typescript/generator/Jackson3Configuration.java">Jackson3Configuration</a> class on GitHub (latest version).</td></tr>
 <tr class="a">
 <td><a href="#jackson3ModuleDiscovery"><code>&lt;jackson3ModuleDiscovery&gt;</code></a></td>
 <td><code>boolean</code></td>
@@ -352,12 +352,12 @@
 <td><a href="#javadocXmlFiles"><code>&lt;javadocXmlFiles&gt;</code></a></td>
 <td><code>List&lt;File&gt;</code></td>
 <td><code>-</code></td>
-<td>List of Javadoc XML files to search for documentation comments. These files should be created using <code>com.github.markusbernhardt.xmldoclet.XmlDoclet</code> from <code>com.github.markusbernhardt:xml-doclet</code> artifact. Javadoc comments are added to output declarations as JSDoc comments. For more information see <a href="https://github.com/dickerpulli/typescript-generator/wiki/Javadoc">Javadoc</a> Wiki page.</td></tr>
+<td>List of Javadoc XML files to search for documentation comments. These files should be created using <code>com.github.markusbernhardt.xmldoclet.XmlDoclet</code> from <code>com.github.markusbernhardt:xml-doclet</code> artifact. Javadoc comments are added to output declarations as JSDoc comments. For more information see <a href="https://github.com/codecentric/typescript-generator/wiki/Javadoc">Javadoc</a> Wiki page.</td></tr>
 <tr class="b">
 <td><a href="#jsonbConfiguration"><code>&lt;jsonbConfiguration&gt;</code></a></td>
 <td><code>JsonbConfiguration</code></td>
 <td><code>-</code></td>
-<td>Specifies JSON-B global configuration. Description of individual parameters is in <a href="https://github.com/dickerpulli/typescript-generator/blob/main/typescript-generator-core/src/main/java/cz/habarta/typescript/generator/JsonbConfiguration.java">Jackson2Configuration</a> class on GitHub (latest version).</td></tr>
+<td>Specifies JSON-B global configuration. Description of individual parameters is in <a href="https://github.com/codecentric/typescript-generator/blob/main/typescript-generator-core/src/main/java/cz/habarta/typescript/generator/JsonbConfiguration.java">Jackson2Configuration</a> class on GitHub (latest version).</td></tr>
 <tr class="a">
 <td><a href="#loggingLevel"><code>&lt;loggingLevel&gt;</code></a></td>
 <td><code>Logger$Level</code></td>
@@ -726,9 +726,9 @@
 <h3>&lt;additionalDataLibraries&gt;</h3>
 <div>Allows to add support for specified libraries. Some libraries have special Jackson serializers and deserializers for their data types so this parameter allows to reflect actual JSON format of those data types. Note: specified library must be present in project dependencies (typescript-generator itself doesn't depend on those libraries). Supported libraries are: 
 <ul>
- <li><code>guava</code> (<a href="https://github.com/google/guava">source</a>) (<a href="https://github.com/dickerpulli/typescript-generator/blob/main/typescript-generator-core/src/main/resources/datalibrary/guava.json">definition</a>)</li>
- <li><code>joda</code> (<a href="https://github.com/JodaOrg/joda-time">source</a>) (<a href="https://github.com/dickerpulli/typescript-generator/blob/main/typescript-generator-core/src/main/resources/datalibrary/joda.json">definition</a>)</li>
- <li><code>vavr</code> (<a href="https://github.com/vavr-io/vavr">source</a>) (<a href="https://github.com/dickerpulli/typescript-generator/blob/main/typescript-generator-core/src/main/resources/datalibrary/vavr.json">definition</a>)</li>
+ <li><code>guava</code> (<a href="https://github.com/google/guava">source</a>) (<a href="https://github.com/codecentric/typescript-generator/blob/main/typescript-generator-core/src/main/resources/datalibrary/guava.json">definition</a>)</li>
+ <li><code>joda</code> (<a href="https://github.com/JodaOrg/joda-time">source</a>) (<a href="https://github.com/codecentric/typescript-generator/blob/main/typescript-generator-core/src/main/resources/datalibrary/joda.json">definition</a>)</li>
+ <li><code>vavr</code> (<a href="https://github.com/vavr-io/vavr">source</a>) (<a href="https://github.com/codecentric/typescript-generator/blob/main/typescript-generator-core/src/main/resources/datalibrary/vavr.json">definition</a>)</li>
 </ul></div>
 <ul>
 <li><strong>Type</strong>: <code>java.util.List&lt;java.lang.String&gt;</code></li>
@@ -738,7 +738,7 @@
 <ul>
  <li>Single <code>*</code> wildcard matches any character except for <code>.</code> and <code>$</code>.</li>
  <li>Double <code>**</code> wildcard matches any character.</li>
-</ul> For more information and examples see <a href="https://github.com/dickerpulli/typescript-generator/wiki/Class-Names-Glob-Patterns">Class Names Glob Patterns</a> Wiki page.</div>
+</ul> For more information and examples see <a href="https://github.com/codecentric/typescript-generator/wiki/Class-Names-Glob-Patterns">Class Names Glob Patterns</a> Wiki page.</div>
 <ul>
 <li><strong>Type</strong>: <code>java.util.List&lt;java.lang.String&gt;</code></li>
 <li><strong>Required</strong>: <code>No</code></li></ul><hr /></section><a id="classes"></a><section><a id="a.3Cclasses.3E"></a>
@@ -783,7 +783,7 @@
 <li><strong>Type</strong>: <code>java.util.List&lt;java.lang.String&gt;</code></li>
 <li><strong>Required</strong>: <code>No</code></li></ul><hr /></section><a id="customTypeNaming"></a><section><a id="a.3CcustomTypeNaming.3E"></a>
 <h3>&lt;customTypeNaming&gt;</h3>
-<div>Specifies custom TypeScript names for Java classes. Multiple mappings can be specified, each using this format: <code>javaClassName:typescriptName</code>. This takes precedence over other naming settings. For more information and example see <a href="https://github.com/dickerpulli/typescript-generator/wiki/Type-Mapping">Type Mapping</a> Wiki page.</div>
+<div>Specifies custom TypeScript names for Java classes. Multiple mappings can be specified, each using this format: <code>javaClassName:typescriptName</code>. This takes precedence over other naming settings. For more information and example see <a href="https://github.com/codecentric/typescript-generator/wiki/Type-Mapping">Type Mapping</a> Wiki page.</div>
 <ul>
 <li><strong>Type</strong>: <code>java.util.List&lt;java.lang.String&gt;</code></li>
 <li><strong>Required</strong>: <code>No</code></li></ul><hr /></section><a id="customTypeNamingFunction"></a><section><a id="a.3CcustomTypeNamingFunction.3E"></a>
@@ -827,7 +827,7 @@
 <li><strong>Type</strong>: <code>cz.habarta.typescript.generator.IdentifierCasing</code></li>
 <li><strong>Required</strong>: <code>No</code></li></ul><hr /></section><a id="excludeClassPatterns"></a><section><a id="a.3CexcludeClassPatterns.3E"></a>
 <h3>&lt;excludeClassPatterns&gt;</h3>
-<div>Excluded classes specified using glob patterns. For more information and examples see <a href="https://github.com/dickerpulli/typescript-generator/wiki/Class-Names-Glob-Patterns">Class Names Glob Patterns</a> Wiki page.</div>
+<div>Excluded classes specified using glob patterns. For more information and examples see <a href="https://github.com/codecentric/typescript-generator/wiki/Class-Names-Glob-Patterns">Class Names Glob Patterns</a> Wiki page.</div>
 <ul>
 <li><strong>Type</strong>: <code>java.util.List&lt;java.lang.String&gt;</code></li>
 <li><strong>Required</strong>: <code>No</code></li></ul><hr /></section><a id="excludeClasses"></a><section><a id="a.3CexcludeClasses.3E"></a>
@@ -844,7 +844,7 @@
 <h3>&lt;extensions&gt;</h3>
 <div>List of extensions specified as fully qualified class name. Known extensions: 
 <ul>
- <li><code>cz.habarta.typescript.generator.ext.AxiosClientExtension}</code> - generates client for JAX-RS service using Axios library, see <a href="https://github.com/dickerpulli/typescript-generator/wiki/JAX-RS-Application">JAX RS Application</a>Wiki page</li>
+ <li><code>cz.habarta.typescript.generator.ext.AxiosClientExtension}</code> - generates client for JAX-RS service using Axios library, see <a href="https://github.com/codecentric/typescript-generator/wiki/JAX-RS-Application">JAX RS Application</a>Wiki page</li>
  <li><code>cz.habarta.typescript.generator.ext.BeanPropertyPathExtension}</code> - generates type-safe property path getters</li>
  <li><code>cz.habarta.typescript.generator.ext.TypeGuardsForJackson2PolymorphismExtension}</code></li>
 </ul> Parameter <code>extensionsWithConfiguration</code><!-- no javadoc sites associated --> can be used in case extension needs some configuration.</div>
@@ -901,7 +901,7 @@
 <li><strong>Type</strong>: <code>boolean</code></li>
 <li><strong>Required</strong>: <code>No</code></li></ul><hr /></section><a id="gsonConfiguration"></a><section><a id="a.3CgsonConfiguration.3E"></a>
 <h3>&lt;gsonConfiguration&gt;</h3>
-<div>Specifies Gson global configuration. Description of individual parameters is in <a href="https://github.com/dickerpulli/typescript-generator/blob/main/typescript-generator-core/src/main/java/cz/habarta/typescript/generator/GsonConfiguration.java">GsonConfiguration</a> class on GitHub (latest version).</div>
+<div>Specifies Gson global configuration. Description of individual parameters is in <a href="https://github.com/codecentric/typescript-generator/blob/main/typescript-generator-core/src/main/java/cz/habarta/typescript/generator/GsonConfiguration.java">GsonConfiguration</a> class on GitHub (latest version).</div>
 <ul>
 <li><strong>Type</strong>: <code>cz.habarta.typescript.generator.GsonConfiguration</code></li>
 <li><strong>Required</strong>: <code>No</code></li></ul><hr /></section><a id="ignoreSwaggerAnnotations"></a><section><a id="a.3CignoreSwaggerAnnotations.3E"></a>
@@ -928,7 +928,7 @@
 <li><strong>Type</strong>: <code>java.lang.String</code></li>
 <li><strong>Required</strong>: <code>No</code></li></ul><hr /></section><a id="jackson2Configuration"></a><section><a id="a.3Cjackson2Configuration.3E"></a>
 <h3>&lt;jackson2Configuration&gt;</h3>
-<div>Specifies Jackson 2 global configuration. Description of individual parameters is in <a href="https://github.com/dickerpulli/typescript-generator/blob/main/typescript-generator-core/src/main/java/cz/habarta/typescript/generator/Jackson2Configuration.java">Jackson2Configuration</a> class on GitHub (latest version).</div>
+<div>Specifies Jackson 2 global configuration. Description of individual parameters is in <a href="https://github.com/codecentric/typescript-generator/blob/main/typescript-generator-core/src/main/java/cz/habarta/typescript/generator/Jackson2Configuration.java">Jackson2Configuration</a> class on GitHub (latest version).</div>
 <ul>
 <li><strong>Type</strong>: <code>cz.habarta.typescript.generator.Jackson2Configuration</code></li>
 <li><strong>Required</strong>: <code>No</code></li></ul><hr /></section><a id="jackson2ModuleDiscovery"></a><section><a id="a.3Cjackson2ModuleDiscovery.3E"></a>
@@ -943,7 +943,7 @@
 <li><strong>Type</strong>: <code>java.util.List&lt;java.lang.String&gt;</code></li>
 <li><strong>Required</strong>: <code>No</code></li></ul><hr /></section><a id="jackson3Configuration"></a><section><a id="a.3Cjackson3Configuration.3E"></a>
 <h3>&lt;jackson3Configuration&gt;</h3>
-<div>Specifies Jackson 3 global configuration. Description of individual parameters is in <a href="https://github.com/dickerpulli/typescript-generator/blob/main/typescript-generator-core/src/main/java/cz/habarta/typescript/generator/Jackson3Configuration.java">Jackson3Configuration</a> class on GitHub (latest version).</div>
+<div>Specifies Jackson 3 global configuration. Description of individual parameters is in <a href="https://github.com/codecentric/typescript-generator/blob/main/typescript-generator-core/src/main/java/cz/habarta/typescript/generator/Jackson3Configuration.java">Jackson3Configuration</a> class on GitHub (latest version).</div>
 <ul>
 <li><strong>Type</strong>: <code>cz.habarta.typescript.generator.Jackson3Configuration</code></li>
 <li><strong>Required</strong>: <code>No</code></li></ul><hr /></section><a id="jackson3ModuleDiscovery"></a><section><a id="a.3Cjackson3ModuleDiscovery.3E"></a>
@@ -958,7 +958,7 @@
 <li><strong>Type</strong>: <code>java.util.List&lt;java.lang.String&gt;</code></li>
 <li><strong>Required</strong>: <code>No</code></li></ul><hr /></section><a id="javadocXmlFiles"></a><section><a id="a.3CjavadocXmlFiles.3E"></a>
 <h3>&lt;javadocXmlFiles&gt;</h3>
-<div>List of Javadoc XML files to search for documentation comments. These files should be created using <code>com.github.markusbernhardt.xmldoclet.XmlDoclet</code> from <code>com.github.markusbernhardt:xml-doclet</code> artifact. Javadoc comments are added to output declarations as JSDoc comments. For more information see <a href="https://github.com/dickerpulli/typescript-generator/wiki/Javadoc">Javadoc</a> Wiki page.</div>
+<div>List of Javadoc XML files to search for documentation comments. These files should be created using <code>com.github.markusbernhardt.xmldoclet.XmlDoclet</code> from <code>com.github.markusbernhardt:xml-doclet</code> artifact. Javadoc comments are added to output declarations as JSDoc comments. For more information see <a href="https://github.com/codecentric/typescript-generator/wiki/Javadoc">Javadoc</a> Wiki page.</div>
 <ul>
 <li><strong>Type</strong>: <code>java.util.List&lt;java.io.File&gt;</code></li>
 <li><strong>Required</strong>: <code>No</code></li></ul><hr /></section><a id="jsonLibrary"></a><section><a id="a.3CjsonLibrary.3E"></a>
@@ -975,7 +975,7 @@
 <li><strong>Type</strong>: <code>cz.habarta.typescript.generator.JsonLibrary</code></li>
 <li><strong>Required</strong>: <code>Yes</code></li></ul><hr /></section><a id="jsonbConfiguration"></a><section><a id="a.3CjsonbConfiguration.3E"></a>
 <h3>&lt;jsonbConfiguration&gt;</h3>
-<div>Specifies JSON-B global configuration. Description of individual parameters is in <a href="https://github.com/dickerpulli/typescript-generator/blob/main/typescript-generator-core/src/main/java/cz/habarta/typescript/generator/JsonbConfiguration.java">Jackson2Configuration</a> class on GitHub (latest version).</div>
+<div>Specifies JSON-B global configuration. Description of individual parameters is in <a href="https://github.com/codecentric/typescript-generator/blob/main/typescript-generator-core/src/main/java/cz/habarta/typescript/generator/JsonbConfiguration.java">Jackson2Configuration</a> class on GitHub (latest version).</div>
 <ul>
 <li><strong>Type</strong>: <code>cz.habarta.typescript.generator.JsonbConfiguration</code></li>
 <li><strong>Required</strong>: <code>No</code></li></ul><hr /></section><a id="loggingLevel"></a><section><a id="a.3CloggingLevel.3E"></a>
@@ -1234,7 +1234,7 @@
  <li><code>global</code> - means that declarations will be in global scope or namespace (no module)</li>
  <li><code>module</code> - means that generated file will contain top-level <code>export</code> declarations</li>
  <li><code>ambientModule</code> - means that generated declarations will be wrapped in <code>declare module "mod" { }</code> declaration</li>
-</ul> Required parameter. For more information see <a href="http://dickerpulli.github.io/typescript-generator/doc/ModulesAndNamespaces.html">Modules and Namespaces</a> Wiki page.</div>
+</ul> Required parameter. For more information see <a href="http://codecentric.github.io/typescript-generator/doc/ModulesAndNamespaces.html">Modules and Namespaces</a> Wiki page.</div>
 <ul>
 <li><strong>Type</strong>: <code>cz.habarta.typescript.generator.TypeScriptOutputKind</code></li>
 <li><strong>Required</strong>: <code>Yes</code></li></ul><hr /></section><a id="primitivePropertiesRequired"></a><section><a id="a.3CprimitivePropertiesRequired.3E"></a>
