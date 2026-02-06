@@ -53,7 +53,7 @@ jobs:
 
       - name: Set version
         run: |
-          VERSION="3.3.${{ github.run_number }}"
+          VERSION="3.4.${{ github.run_number }}"
           echo "BUILD_VERSION=$VERSION" >> $GITHUB_ENV
           mvn --batch-mode versions:set -DnewVersion=$VERSION
 
