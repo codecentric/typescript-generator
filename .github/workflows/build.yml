@@ -64,8 +64,11 @@ jobs:
           mvn --batch-mode versions:set -DnewVersion=$VERSION
 
       - name: Build with Maven
+        env:
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
         run: |
-          mvn --batch-mode clean install -P attach-artifacts,local-deploy,sign-artifacts -Dgpg.pinentry-mode=loopback -Dgpg.batch=true
+          mvn --batch-mode clean install -P attach-artifacts,local-deploy,sign-artifacts \
+            -Dgpg.pinentry-mode=loopback -Dgpg.batch=true -Dgpg.passphrase="${GPG_PASSPHRASE}"
 
       - name: Deploy site
         if: github.ref == 'refs/heads/actions' && github.event_name == 'push'
