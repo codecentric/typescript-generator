@@ -8,13 +8,13 @@ on:
     branches:
       - main
 
-env:
-  JAVA_VERSION: '21'
-  JAVA_DISTRIBUTION: 'temurin'
-
 permissions:
   contents: write
   pages: write
+
+env:
+  JAVA_VERSION: '21'
+  JAVA_DISTRIBUTION: 'temurin'
 
 jobs:
   build:
@@ -51,6 +51,12 @@ jobs:
           gpg --batch --yes --import /tmp/gpg_signing_key.bin
           rm /tmp/gpg_signing_key.bin
 
+          # Configure GPG for non-interactive mode
+          echo "use-agent" >> ~/.gnupg/gpg.conf
+          echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
+          echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
+          echo RELOADAGENT | gpg-connect-agent
+
       - name: Set version
         run: |
           VERSION="3.4.${{ github.run_number }}"
@@ -62,7 +68,7 @@ jobs:
           mvn --batch-mode clean install -P attach-artifacts,local-deploy,sign-artifacts
 
       - name: Deploy site
-        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        if: github.ref == 'refs/heads/actions' && github.event_name == 'push'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -79,10 +85,10 @@ jobs:
         with:
           name: build-artifacts
           path: target/artifacts.zip
-          retention-days: 90
+          retention-days: 7
 
       - name: Create and push tag
-        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        if: github.ref == 'refs/heads/actions' && github.event_name == 'push'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
