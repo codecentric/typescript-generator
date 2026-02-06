@@ -65,7 +65,7 @@ jobs:
 
       - name: Build with Maven
         run: |
-          mvn --batch-mode clean install -P attach-artifacts,local-deploy,sign-artifacts
+          mvn --batch-mode clean install -P attach-artifacts,local-deploy,sign-artifacts -Dgpg.pinentry-mode=loopback -Dgpg.batch=true
 
       - name: Deploy site
         if: github.ref == 'refs/heads/actions' && github.event_name == 'push'
