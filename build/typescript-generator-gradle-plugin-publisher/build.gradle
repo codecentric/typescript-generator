@@ -24,8 +24,8 @@ task printVersion {
 }
 
 gradlePlugin {
-    website = 'https://github.com/dickerpulli/typescript-generator'
-    vcsUrl = 'https://github.com/dickerpulli/typescript-generator'
+    website = 'https://github.com/codecentric/typescript-generator'
+    vcsUrl = 'https://github.com/codecentric/typescript-generator'
     plugins {
         typescriptGeneratorPlugin {
             id = 'de.codecentric.typescript-generator'

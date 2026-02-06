@@ -43,8 +43,8 @@ import tools.jackson.databind.JacksonModule;
 
 /**
  * See cz.habarta.typescript.generator.maven.GenerateMojo
- * @see <a href="https://github.com/dickerpulli/typescript-generator">README.md</a> on GitHub or in project root directory
- * @see <a href="https://github.com/dickerpulli/typescript-generator/wiki">Wiki</a> on GitHub
+ * @see <a href="https://github.com/codecentric/typescript-generator">README.md</a> on GitHub or in project root directory
+ * @see <a href="https://github.com/codecentric/typescript-generator/wiki">Wiki</a> on GitHub
  */
 public class Settings {
     public String newline = String.format("%n");

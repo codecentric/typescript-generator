@@ -56,7 +56,7 @@ public class JaxrsApplicationScanner {
     }
 
     private static RuntimeException reportError(ReflectiveOperationException e) {
-        final String url = "https://github.com/dickerpulli/typescript-generator/wiki/JAX-RS-Application";
+        final String url = "https://github.com/codecentric/typescript-generator/wiki/JAX-RS-Application";
         final String message = "Cannot load JAX-RS application. For more information see " + url + ".";
         TypeScriptGenerator.getLogger().error(message);
         return new RuntimeException(message, e);

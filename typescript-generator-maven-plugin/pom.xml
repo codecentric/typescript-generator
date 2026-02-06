@@ -82,7 +82,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <pubScmUrl>scm:git:https://github.com/dickerpulli/typescript-generator.git</pubScmUrl>
+                    <pubScmUrl>scm:git:https://github.com/codecentric/typescript-generator.git</pubScmUrl>
                     <scmBranch>gh-pages</scmBranch>
                     <content>${project.build.directory}/site</content>
                     <checkinComment>Publish plugin site for ${project.version}</checkinComment>

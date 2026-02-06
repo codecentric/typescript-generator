@@ -12,7 +12,7 @@ init:
     }
 install:
 - ps: |-
-    git remote set-url origin https://github.com/dickerpulli/typescript-generator.git
+    git remote set-url origin https://github.com/codecentric/typescript-generator.git
     git config --global credential.helper store
     git config --global user.email "$($env:GITHUB_EMAIL)"
     git config --global user.name "$($env:GITHUB_NAME)"

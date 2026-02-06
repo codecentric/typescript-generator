@@ -1,13 +1,13 @@
 [![Maven Central](https://img.shields.io/maven-central/v/de.codecentric.typescript-generator/typescript-generator-core.svg)](https://repo1.maven.org/maven2/de/codecentric/typescript-generator/typescript-generator-core/)
-[![Appveyor](https://img.shields.io/appveyor/ci/dickerpulli/typescript-generator/main.svg)](https://ci.appveyor.com/project/dickerpulli/typescript-generator)
-[![Stars](https://img.shields.io/github/stars/dickerpulli/typescript-generator.svg?style=social)](https://github.com/dickerpulli/typescript-generator)
+[![Appveyor](https://img.shields.io/appveyor/ci/codecentric/typescript-generator/main.svg)](https://ci.appveyor.com/project/codecentric/typescript-generator)
+[![Stars](https://img.shields.io/github/stars/codecentric/typescript-generator.svg?style=social)](https://github.com/codecentric/typescript-generator)
 
 Quick links:
-[Configuration parameters](https://dickerpulli.github.io/typescript-generator/generate-mojo.html)
+[Configuration parameters](https://codecentric.github.io/typescript-generator/generate-mojo.html)
 |
-[Breaking changes](https://github.com/dickerpulli/typescript-generator/wiki/Breaking-Changes)
+[Breaking changes](https://github.com/codecentric/typescript-generator/wiki/Breaking-Changes)
 |
-[Release notes](https://github.com/dickerpulli/typescript-generator/releases)
+[Release notes](https://github.com/codecentric/typescript-generator/releases)
 
 typescript-generator
 ====================
