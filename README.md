@@ -1,4 +1,4 @@
-[![Maven Central](https://img.shields.io/maven-central/v/de.tbosch.typescript-generator/typescript-generator-core.svg)](https://repo1.maven.org/maven2/de/tbosch/typescript-generator/typescript-generator-core/)
+[![Maven Central](https://img.shields.io/maven-central/v/de.codecentric.typescript-generator/typescript-generator-core.svg)](https://repo1.maven.org/maven2/de/codecentric/typescript-generator/typescript-generator-core/)
 [![Appveyor](https://img.shields.io/appveyor/ci/dickerpulli/typescript-generator/main.svg)](https://ci.appveyor.com/project/dickerpulli/typescript-generator)
 [![Stars](https://img.shields.io/github/stars/dickerpulli/typescript-generator.svg?style=social)](https://github.com/dickerpulli/typescript-generator)
 
@@ -63,7 +63,7 @@ Maven
 In Maven build you can use `typescript-generator-maven-plugin` like this:
 ``` xml
 <plugin>
-    <groupId>de.tbosch.typescript-generator</groupId>
+    <groupId>de.codecentric.typescript-generator</groupId>
     <artifactId>typescript-generator-maven-plugin</artifactId>
     <version>x.y.z</version>
     <executions>
@@ -92,22 +92,22 @@ Detailed description how to configure typescript-generator-maven-plugin is on ge
 Gradle
 ------
 
-In Gradle build you can use `de.tbosch.typescript-generator` plugin like this:
+In Gradle build you can use `de.codecentric.typescript-generator` plugin like this:
 ```groovy
 plugins {
-    id 'de.tbosch.typescript-generator' version 'x.y.z'
+    id 'de.codecentric.typescript-generator' version 'x.y.z'
 }
 
 generateTypeScript {
     jsonLibrary = 'jackson3'
     classes = [
-        'de.tbosch.typescript.generator.sample.Person'
+        'de.codecentric.typescript.generator.sample.Person'
     ]
     outputKind = 'module'
 }
 ```
 
-For the Kotlin Gradle DSL you can alternatively use the `de.tbosch.typescript-generator` plugin like this:
+For the Kotlin Gradle DSL you can alternatively use the `de.codecentric.typescript-generator` plugin like this:
 
 #### build.gradle.kts
 ```kotlin
@@ -116,7 +116,7 @@ import cz.habarta.typescript.generator.TypeScriptFileType
 import cz.habarta.typescript.generator.TypeScriptOutputKind
 
 plugins {
-    id("de.tbosch.typescript-generator") version "x.y.z"
+    id("de.codecentric.typescript-generator") version "x.y.z"
 }
 
 tasks {
@@ -172,7 +172,7 @@ REST frameworks
 Typescript-generator can generate not only TypeScript declarations for JSON Java classes but it can also generate client classes for REST services. Supported REST frameworks are JAX-RS and Spring. Client for JAX-RS service can be generated using `generateJaxrsApplicationClient` parameter, client for Spring service can be generated using `generateSpringApplicationClient`. Since Spring support is in separate module it is needed to add this module to typescript-generator dependencies. Here is example for Maven:
 ``` xml
 <plugin>
-    <groupId>de.tbosch.typescript-generator</groupId>
+    <groupId>de.codecentric.typescript-generator</groupId>
     <artifactId>typescript-generator-maven-plugin</artifactId>
     <version>${typescript-generator.version}</version>
     <configuration>
@@ -181,7 +181,7 @@ Typescript-generator can generate not only TypeScript declarations for JSON Java
     </configuration>
     <dependencies>
         <dependency>
-            <groupId>de.tbosch.typescript-generator</groupId>
+            <groupId>de.codecentric.typescript-generator</groupId>
             <artifactId>typescript-generator-spring</artifactId>
             <version>${typescript-generator.version}</version>
         </dependency>
@@ -193,8 +193,8 @@ Typescript-generator can generate not only TypeScript declarations for JSON Java
 Download
 --------
 Releases are available from Maven Central Repository.
-[Search](http://search.maven.org/#search%7Cga%7C1%7Cde.tbosch.typescript-generator) for dependency information for your build tool
-or download [typescript-generator-core](https://repo1.maven.org/maven2/de/tbosch/typescript-generator/typescript-generator-core) directly.
+[Search](http://search.maven.org/#search%7Cga%7C1%7Cde.codecentric.typescript-generator) for dependency information for your build tool
+or download [typescript-generator-core](https://repo1.maven.org/maven2/de/codecentric/typescript-generator/typescript-generator-core) directly.
 
 
 Wiki
