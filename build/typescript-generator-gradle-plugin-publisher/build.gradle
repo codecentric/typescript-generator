@@ -29,8 +29,8 @@ gradlePlugin {
     plugins {
         typescriptGeneratorPlugin {
             id = 'de.codecentric.typescript-generator'
-            displayName = 'Typescript-generator Gradle plugin'
-            description = 'Generates TypeScript from Java - JSON declarations, REST service client'
+            displayName = 'Typescript Generator Gradle Plugin'
+            description = 'Generates TypeScript from Java - Reading Jackson (v2 and v3) annotations and generating d.ts'
             implementationClass = 'cz.habarta.typescript.generator.gradle.TypeScriptGeneratorPublishedPlugin'
             tags.set(['java', 'kotlin', 'json', 'typescript', 'typescript-generator', 'jackson', 'jakarta', 'rest', 'client', 'spring'])
         }
